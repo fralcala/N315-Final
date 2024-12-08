@@ -1,0 +1,84 @@
+{
+  "PRODUCTS": [
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#FFC92F",
+      "productName": "product 1",
+      "productImage": "coffee1.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#FFC92F",
+      "productName": "product 2",
+      "productImage": "coffee2.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "",
+      "productBannerColor": "",
+      "productName": "product 3",
+      "productImage": "coffee3.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "",
+      "productBannerColor": "",
+      "productName": "product 4",
+      "productImage": "coffee4.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "",
+      "productBannerColor": "",
+      "productName": "product 5",
+      "productImage": "coffee5.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#FFC92F",
+      "productName": "product 6",
+      "productImage": "coffee6.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#FFC92F",
+      "productName": "product 7",
+      "productImage": "coffee7.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "",
+      "productBannerColor": "",
+      "productName": "product 8",
+      "productImage": "coffee8.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#ffc92f",
+      "productName": "product 9",
+      "productImage": "coffee9.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    },
+    {
+      "productBanner": "2 FREE BOXES - BREW2FREE",
+      "productBannerColor": "#ffc92f",
+      "productName": "product 10",
+      "productImage": "coffee10.webp",
+      "productPrice": "100",
+      "productDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aut eaque in, porro asperiores nam omnis, iure sed pariatur ipsum vero iste quibusdam officiis dignissimos, amet autem maiores fugit optio!"
+    }
+  ]
+}
