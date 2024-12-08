@@ -40,7 +40,10 @@ function loadCartItems() {
               <div class="image-holder">
                 <img src="images/${product.productImage}" alt="product image" />
               </div>
-              <div class="desc">${product.productDesc}</div>
+              <div class="product-color" style="background-color: ${product.productColor}"></div>
+        <div class="name">
+          ${product.productName}
+        </div>
               <div class="price">$${product.productPrice}</div>
               <div class="remove" id="${index}">Remove</div>
             <div/>`;
@@ -63,14 +66,20 @@ function loadHomePage() {
     let productHTML = `<div class="product">
         ${
           product.productBanner
-            ? `<div class="pbanner" style="background-color: ${product.productBannerColor}">${product.productBanner} Banner</div>`
+            ? `<div class="pbanner" style="background-color: ${product.productBannerColor}; color: ${product.color}";>${product.productBanner}</div>`
             : ""
         }
         <div class="image-holder">
           <img src="images/${product.productImage}" alt="product image" />
         </div>
-        <div class="desc">
-          ${product.productDesc}
+        <div class="product-color" style="background-color: ${
+          product.productColor
+        }"></div>
+        <div class="name">
+          ${product.productName}
+        </div>
+        <div class="price">
+          $${product.productPrice}
         </div>
         <div class="buy">
           <div class="buy-now" id="${index}">Buy Now</div>
