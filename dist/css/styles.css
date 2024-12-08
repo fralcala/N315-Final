@@ -97,6 +97,36 @@ nav {
   right: 0px;
 }
 
+.filters {
+  width: 1180px;
+  /* background-color: #ffc92f; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.filters .box {
+  height: 50px;
+  border: 2px solid #999999;
+  padding: 5px 7px 0;
+  margin: 3px;
+  border-radius: 3px;
+  justify-items: center;
+}
+
+.boxes {
+  display: flex;
+}
+
+.filters img {
+  width: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
 #app {
   max-width: 1180px;
   margin: 20px auto 0 auto;
@@ -124,11 +154,11 @@ nav {
 
 .pbanner {
   width: 70%;
-  padding: 10px;
-  font-size: 12px;
+  padding: 5px 10px;
+  font-size: 10px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5px;
   border-radius: 5px;
 }
 

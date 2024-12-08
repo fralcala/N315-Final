@@ -1,5 +1,14 @@
 import * as $ from "jquery";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  getAuth,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
+import { app } from "./firebaseConfig";
 
+const auth = getAuth(app);
 var products = [];
 var cart = [];
 
@@ -31,6 +40,7 @@ export function initURLListener() {
 }
 
 function loadCartItems() {
+  // $(".filters").css("display", "none");
   if (cart.length > 0) {
     $(".cart-items").html("");
     $.each(cart, (index, productIndex) => {
@@ -106,4 +116,56 @@ function loadProducts() {
     console.log(products);
     loadHomePage();
   });
+}
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log("User is signed in");
+    $(".yr").css("display", "block");
+  } else {
+    console.log("User is signed out for real");
+    $(".yr").css("display", "none");
+    // uncomment to get yr to show up only when logged in
+  }
+});
+
+export function signUserUp(fn, ln, email, password) {
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      console.log("User Created");
+      alert("User Created!");
+      $(".login").css("display", "none");
+      $(".logOut").css("display", "block");
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      alert("Error Message " + errorMessage);
+    });
+}
+
+export function signUserOut() {
+  signOut(auth)
+    .then(() => {
+      console.log("User signed out");
+      $(".yr");
+      $(".login").css("display", "block");
+      $(".logOut").css("display", "none");
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      alert("Error Message " + errorMessage);
+    });
+}
+
+export function signUserin(email, password) {
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+      alert("User logged in");
+      $(".login").css("display", "none");
+      $(".logOut").css("display", "block");
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      alert("Error Message " + errorMessage);
+    });
 }
