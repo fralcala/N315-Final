@@ -65,7 +65,7 @@ nav {
   border: 1px solid #ccc;
   border-radius: 100px;
   padding: 0 10px;
-  background-color: #fff;
+  background-color: #f3f3f3;
 }
 
 .search p {
@@ -74,7 +74,7 @@ nav {
 }
 
 .account-holder {
-  width: 100px;
+  /* max-width: 150px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -87,8 +87,25 @@ nav {
   cursor: pointer;
 }
 
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.logOut {
+  margin-right: 5px;
+  background-color: #3b2b2f;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: none;
+}
+
 .cart {
   position: relative;
+  margin-left: 10px;
 }
 
 .item-text {
@@ -98,7 +115,7 @@ nav {
 }
 
 .filters {
-  width: 1180px;
+  max-width: 1180px;
   /* background-color: #ffc92f; */
   display: flex;
   flex-direction: row;
@@ -128,13 +145,15 @@ nav {
 }
 
 #app {
-  max-width: 1180px;
+  max-width: 1220px;
   margin: 20px auto 0 auto;
   /* background-color: antiquewhite; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding-bottom: 50px;
+  padding: 0 20px 50px 20px;
 }
 
 .product {
@@ -190,4 +209,55 @@ nav {
   border: 2px solid #ffc92f;
   text-align: center;
   cursor: pointer;
+}
+
+/* Account page */
+.accountPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 50px 0 50px;
+}
+
+.logIn,
+.signUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  height: 52px;
+  width: 320px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.form .submit {
+  background-color: #3b2b2f;
+  color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .links,
+  .filters {
+    display: none;
+  }
+
+  nav {
+    height: 150px;
+  }
 }

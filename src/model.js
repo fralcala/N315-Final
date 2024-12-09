@@ -121,11 +121,8 @@ function loadProducts() {
 onAuthStateChanged(auth, (user) => {
   if (user) {
     console.log("User is signed in");
-    $(".yr").css("display", "block");
   } else {
     console.log("User is signed out for real");
-    $(".yr").css("display", "none");
-    // uncomment to get yr to show up only when logged in
   }
 });
 
@@ -134,7 +131,6 @@ export function signUserUp(fn, ln, email, password) {
     .then(() => {
       console.log("User Created");
       alert("User Created!");
-      $(".login").css("display", "none");
       $(".logOut").css("display", "block");
     })
     .catch((error) => {
@@ -147,8 +143,6 @@ export function signUserOut() {
   signOut(auth)
     .then(() => {
       console.log("User signed out");
-      $(".yr");
-      $(".login").css("display", "block");
       $(".logOut").css("display", "none");
     })
     .catch((error) => {
@@ -161,7 +155,6 @@ export function signUserin(email, password) {
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       alert("User logged in");
-      $(".login").css("display", "none");
       $(".logOut").css("display", "block");
     })
     .catch((error) => {
