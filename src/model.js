@@ -64,6 +64,7 @@ function loadCartItems() {
         console.log("remove", cart);
         cart.splice(index, 1);
         console.log("after remove", cart);
+        $(".item-text").html(cart.length);
         loadCartItems();
       });
     });
@@ -118,6 +119,7 @@ function loadProducts() {
   });
 }
 
+// loging in
 onAuthStateChanged(auth, (user) => {
   if (user) {
     console.log("User is signed in");
